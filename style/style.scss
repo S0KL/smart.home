@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800i');
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/MullerLight.otf");
+
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/MullerRegular.otf");
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/MullerBold.otf");
+
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: Muller;
+  src: url("../fonts/MullerBlack.otf");
+
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 16px;
+  font-family: Muller;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+header {
+  background: url(../img/bghead.jpg) 25px;
+  background-size: 100% 100%;
+  -webkit-box-shadow: inset 0px 90px 42px -4px rgba(0,0,0,0.25);
+  -moz-box-shadow: inset 0px 90px 42px -4px rgba(0,0,0,0.25);
+  box-shadow: inset 0px 90px 42px -4px rgba(0,0,0,0.25);
+}
+
+.container {
+  box-sizing: border-box;
+  padding: 2% 16% 0 21%;
+}
+
+.header-top {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  & .phone{
+    display: flex;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    & p {
+      margin-top: -5px;
+    }
+  }
+}
+.brand {
+  margin-left: 3px;
+  margin-top: -5px;
+}
+.logo {
+  width: 150px;
+}
+
+.telephone{
+  margin-top: -7px;
+  width: 1.3em;
+  margin-right: 20px;
+}
+
+.header-middle {
+  margin: 11% 0 1% 0;
+  & h1 {
+    font-size: 2.3em;
+    font-weight: 800;
+    color: #ffc600;
+  }
+  & h3 {
+    color: white;
+    font-size: 2.3em;
+    font-weight: 200;
+    line-height: 1.3;
+  }
+  & p {
+    color: white;
+    font-size: 1.25em;
+    margin-top: 0.6em;
+  }
+}
+
+.header-bottom {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 11%;
+  & .about-us-video{
+    display: flex;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 12px;
+    margin-right: -18px;
+    & p {
+      line-height: 1.2;
+      font-size: 0.7em;
+      color: white;
+      width: 50%;
+    }
+    & span {
+      font-weight: 700;
+    }
+  }
+}
+
+.video-img{
+  width: 55px;
+}
+
+.btn {
+  margin-top: 10px;
+  font-size: 0.8em;
+  font-family: Muller;
+  font-weight: 600;
+  height: 3.5em;
+  width: 17em;
+  border-radius: 30px;
+  background-color: #ffc600;
+  outline: none;
+}
+
+.suppliers {
+  padding-top: 2%;
+  padding-bottom: 5%;
+  background-color: #fafafa;
+}
+
+.square-caption {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-transform: uppercase;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  & h1{
+    font-size: 1.6em;
+    margin: 0 0.3em;
+  }
+}
+
+.square {
+  height: 0.5em;
+  width: 0.5em;
+  border: 3px solid #ffc600;
+}
+
+.first-suppliers {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.dooya {
+  width: 28%;
+}
+
+#sOmfy{
+  margin-left: -10px;
+}
+
+.second-suppliers {
+  margin-top: 3.5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  & .soundrape {
+    margin-top: -1%;
+  }
+}
+
+.product-content{
+  margin: 3% 0;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 3%;
+  grid-column-gap: 3%;
+}
+
+.product-article{
+  & span{
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #ffc600;
+  }
+  & h2{
+    font-size: 1.1em;
+    text-transform: uppercase;
+  }
+  & p{
+    margin-top: 0%;
+    font-size: 0.7em;
+    line-height: 1.6;
+    text-align: left;
+    color: #000000;
+  }
+}
+
+.video-frame {
+  width: 100%;
+  height: 250px;
+  margin: 2% 0;
+}
+
+.controling{
+  background-color: #fafafa;
+  padding-bottom: 5%;
+  padding-top: 3.5%;
+}
+
+.controling-examples {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controling-block {
+  display: flex;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+& p {
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5%;
+}
+}
+
+.panel {
+  margin-top: 17px;
+}
+
+.remote {
+  margin-top: -2px;
+}
+
+.smartHouse{
+  margin-top: -14px;
+}
+
+.howItWorks{
+  padding-bottom: 5%;
+  padding-top: 2%;
+}
+
+.howItWorks-video{
+  margin-top: 5%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.howItWorks-video-frame{
+  width: 90%;
+  height: 160px;
+}
+
+main{
+  padding: 2% 0 3% 0;
+  background-color: #fafafa;
+}
+
+.aboutPluses {
+  margin-top: 33px;
+  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 2.5ch;
+  grid-column-gap: 2ch;
+  & img{
+    width: 26%;
+  }
+}
+
+.plusesContent{
+  margin-left: 5.4em;
+  margin-top: -3.5em;
+  & h3 {
+    text-transform: uppercase;
+    line-height: 2.6;
+    font-size: 0.9em;
+  }
+  & p {
+    font-family: Muller;
+    font-size: 0.7em;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #28282a;
+  }
+}
+
+.btn-bottom {
+  padding: 4% 0 6% 0;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonWithPresent{
+  font-size: 0.8em;
+  font-family: Muller;
+  height: 4em;
+  width: 18em;
+  font-weight: 600;
+  border-radius: 30px;
+  background-color: #ffc600;
+  outline: none;
+
+}
+
+.instagram {
+  height: 115vh;
+  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  flex: 1 0 auto;
+}
+
+.insta1{
+  background: url(../img/insta-1.jpg) center center;
+  background-size: 100% 100%;
+}
+
+.insta2{
+  background: url(../img/insta-2.jpg) center center;
+  background-size: 100% 100%;
+}
+
+.insta3{
+  background: url(../img/insta-3.jpg) center center;
+  background-size: 100% 100%;
+}
+
+footer{
+  background-color: #28282a;
+  flex: 0 0 auto;
+}
+
+.footer-content{
+  padding: 0% 0 2% 0;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  & p {
+    font-size: 0.5em;
+    color: white;
+  }
+    & .phone{
+      display: flex;
+      flex-direction: row;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: white;
+    }
+}
+
+.footer-logo {
+  width:135px;
+}
+
+@media screen and (max-width: 1030px) {
+  .container{
+    padding: 2% 10% 0 10%;
+  }
+  .instagram {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  html {
+    font-size: 12px;
+  }
+  .instagram {
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .first-suppliers{
+    justify-content: center;
+  }
+  .second-suppliers {
+    justify-content: center;
+    & img {
+              margin-top: 20px;
+              margin-left: 5px;
+            }
+    & .soundrape {
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  html {
+    font-size: 10px;
+  }
+  .container{
+    padding: 2% 5% 0 5%;
+  }
+  .header-bottom {
+    & .about-us-video {
+      display: flex;
+      flex-direction: row;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-right: 0;
+    }
+  }
+  .controling-examples {
+    margin-top: 5%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    & .smartHouse{
+      margin-top: 0;
+    }
+  }
+    .aboutPluses {
+     & img {
+       width: 30%;
+     }
+  }
+  .plusesContent {
+    margin-left: 70px;
+    margin-top: -40px;
+  }
+}
+
+@media screen and (max-width: 551px) {
+  html {
+    font-size: 8px;
+  }
+  .logo{
+    width: 100px;
+  }
+  .telephone {
+    width: 15px;
+  }
+  .video-img {
+    width: 50%;
+    height: 50%;
+  }
+  .howItWorks-video {
+    margin-top: 5%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    & div{
+      margin-bottom: 2%;
+    }
+  }
+
+  .howItWorks-video-frame{
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .aboutPluses {
+    & img {
+      width: 25%;
+    }
+  }
+  .plusesContent {
+    margin-left: 5em;
+    margin-top: -3.5em;
+  }
+  .video-frame {
+    width: 100%;
+    height: 150px;
+    margin: 4% 0;
+  }
+
+  .instagram {
+    height: 40vh;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .plusesContent {
+    margin-left: 4em;
+    margin-top: -3em;
+  }
+}
+
